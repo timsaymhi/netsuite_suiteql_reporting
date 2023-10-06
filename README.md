@@ -3,7 +3,7 @@ NetSuite user facing SuiteQL reporting Suitelet
 
 Make sure script variables are set and you have selected the correct file cabinet folder.
 
-Required script parameters:
+**Required script parameters:**
  
 File cabinet to store sql files in text format: 
 name: custscript_sql_folder_id
@@ -19,7 +19,7 @@ name: custscript_sql_client_id
 type: list/record
 record: script
 
-Reporting Variables:
+**Reporting Variables:**
 Enter variables in your sql query in the following format: $ /*item*/
 
 Example: where item.id = $ /*item*/
@@ -31,7 +31,7 @@ If you want a date picker variable use /*date*/
 
 See example SQL file
 
-SQL File Notes:
+**SQL File Notes:**
 
 In description please enter a description of the report and any columns you want to add filters.
 
