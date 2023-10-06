@@ -20,6 +20,7 @@ type: list/record
 record: script
 
 **Reporting Variables:**
+
 Enter variables in your sql query in the following format: $ /*item*/
 
 Example: where item.id = $ /*item*/
