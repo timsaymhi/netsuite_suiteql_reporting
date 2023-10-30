@@ -1,13 +1,21 @@
 # NetSuite SuiteQL Custom Reporting Suitelet
 NetSuite user facing SuiteQL reporting Suitelet
 
-Make sure script variables are set and you have selected the correct file cabinet folder.
+**Custom records needed:**
+
+Saved SQL Search - see customrecordsql_search.xml
+Edit form and attach "sql_query_filter_cl.js" under custom code, set "Field Changed Function" to loadFilters. 
+Set new form as preferred.
+
+Saved SQL Search Filters - see customrecordsql_searchfield.xml
 
 **Required script parameters:**
+Make sure script variables are set and you have selected the correct file cabinet folder.
  
-File cabinet to store sql files in text format: 
+SQL Custom Record ID:
 name: custscript_sql_folder_id
-type: interger
+type: text
+(Custom record name for SQL table)
 
 Link to SuiteQL restlet script/deployment:
 name: custscript_sql_restlet_id
@@ -32,11 +40,7 @@ If you want a date picker variable use /*date*/
 
 See example SQL file
 
-**SQL File Notes:**
-
-In description please enter a description of the report and any columns you want to add filters.
-
-Column count starts at 0.
+Suitelet will dynamically add filters to table based off of the filter records saved on the SQL query.
 
 Example: Revenue Report,0,6
 
